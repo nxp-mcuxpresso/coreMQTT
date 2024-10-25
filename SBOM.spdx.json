@@ -1,0 +1,52 @@
+{
+  "SPDXID": "SPDXRef-DOCUMENT",
+  "spdxVersion": "SPDX-2.3",
+  "creationInfo": {
+    "created": "2025-06-17T09:28:11Z",
+    "creators": [
+      "Organization: NXP"
+    ],
+    "licenseListVersion": "3.20"
+  },
+  "name": "coremqtt-v25.06.00",
+  "dataLicense": "CC0-1.0",
+  "documentNamespace": "https://nxp.com/spdx/71bc406d-d122-4542-abd4-f306793774db",
+  "packages": [
+    {
+      "SPDXID": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db",
+      "name": "coremqtt",
+      "versionInfo": "v25.06.00",
+      "licenseConcluded": "(MIT)",
+      "licenseDeclared": "(MIT)",
+      "downloadLocation": "https://github.com/nxp-mcuxpresso/coremqtt",
+      "originator": "Organization: NXP",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    },
+    {
+      "SPDXID": "SPDXRef-package-8a45fd44-10b4-43fd-b2ff-880d906c8388",
+      "name": "FreeRTOS core",
+      "versionInfo": "v2.1.1",
+      "licenseConcluded": "MIT",
+      "licenseDeclared": "MIT",
+      "downloadLocation": "NOASSERTION",
+      "originator": "Organization: NXP",
+      "supplier": "NOASSERTION",
+      "externalRefs": [],
+      "filesAnalyzed": false
+    }
+  ],
+  "relationships": [
+    {
+      "spdxElementId": "SPDXRef-DOCUMENT",
+      "relationshipType": "DESCRIBES",
+      "relatedSpdxElement": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db"
+    },
+    {
+      "spdxElementId": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db",
+      "relationshipType": "CONTAINS",
+      "relatedSpdxElement": "SPDXRef-package-8a45fd44-10b4-43fd-b2ff-880d906c8388"
+    }
+  ]
+}
