@@ -2,20 +2,20 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-06-17T09:28:11Z",
+    "created": "2025-09-01T13:04:32Z",
     "creators": [
       "Organization: NXP"
     ],
     "licenseListVersion": "3.20"
   },
-  "name": "coremqtt-v25.06.00",
+  "name": "coremqtt-v25.09.00",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://nxp.com/spdx/71bc406d-d122-4542-abd4-f306793774db",
+  "documentNamespace": "https://nxp.com/spdx/4308af5e-7305-4c58-8a51-218dc3297531",
   "packages": [
     {
-      "SPDXID": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db",
+      "SPDXID": "SPDXRef-package-4308af5e-7305-4c58-8a51-218dc3297531",
       "name": "coremqtt",
-      "versionInfo": "v25.06.00",
+      "versionInfo": "v25.09.00",
       "licenseConcluded": "(MIT)",
       "licenseDeclared": "(MIT)",
       "downloadLocation": "https://github.com/nxp-mcuxpresso/coremqtt",
@@ -25,15 +25,26 @@
       "filesAnalyzed": false
     },
     {
-      "SPDXID": "SPDXRef-package-8a45fd44-10b4-43fd-b2ff-880d906c8388",
-      "name": "FreeRTOS core",
+      "SPDXID": "SPDXRef-package-350e25ee-9f77-479a-8f5f-92ca4d2fe3e2",
+      "name": "FreeRTOS/coreMQTT",
       "versionInfo": "v2.1.1",
       "licenseConcluded": "MIT",
       "licenseDeclared": "MIT",
       "downloadLocation": "NOASSERTION",
       "originator": "Organization: NXP",
       "supplier": "NOASSERTION",
-      "externalRefs": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/FreeRTOS/coreMQTT@v2.1.1",
+          "referenceType": "purl"
+        },
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "1df0b211-efa5-4928-92c4-38d86b16060d",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        }
+      ],
       "filesAnalyzed": false
     }
   ],
@@ -41,12 +52,12 @@
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db"
+      "relatedSpdxElement": "SPDXRef-package-4308af5e-7305-4c58-8a51-218dc3297531"
     },
     {
-      "spdxElementId": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db",
-      "relationshipType": "CONTAINS",
-      "relatedSpdxElement": "SPDXRef-package-8a45fd44-10b4-43fd-b2ff-880d906c8388"
+      "spdxElementId": "SPDXRef-package-4308af5e-7305-4c58-8a51-218dc3297531",
+      "relationshipType": "DYNAMIC_LINK",
+      "relatedSpdxElement": "SPDXRef-package-350e25ee-9f77-479a-8f5f-92ca4d2fe3e2"
     }
   ]
 }
