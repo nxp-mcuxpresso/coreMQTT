@@ -1,5 +1,5 @@
 #
-# Copyright 2024 NXP
+# Copyright 2024-2025 NXP
 #
 # SPDX-License-Identifier: MIT
 #
@@ -16,7 +16,7 @@ endif()
 
 if (CONFIG_MCUX_COMPONENT_middleware.freertos.coremqtt)
     mcux_add_source(
-        SOURCES source/core_mqtt.c source/core_mqtt_serializer.c source/core_mqtt_state.c source/include/core_mqtt.h source/include/core_mqtt_config_defaults.h source/include/core_mqtt_default_logging.h source/include/core_mqtt_serializer.h source/include/core_mqtt_state.h source/interface/transport_interface.h
+        SOURCES source/core_mqtt.c source/core_mqtt_serializer.c source/core_mqtt_state.c source/include/core_mqtt.h source/include/core_mqtt_config_defaults.h source/include/core_mqtt_serializer.h source/include/core_mqtt_state.h source/interface/transport_interface.h
     )
     mcux_add_include(
         INCLUDES source/include source/interface
