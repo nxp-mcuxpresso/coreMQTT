@@ -2,20 +2,20 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2025-06-17T09:28:11Z",
+    "created": "2026-01-08T03:54:23Z",
     "creators": [
       "Organization: NXP"
     ],
-    "licenseListVersion": "3.20"
+    "licenseListVersion": "3.26"
   },
-  "name": "coremqtt-v25.06.00",
+  "name": "coremqtt-v26.03.00-pvw1",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://nxp.com/spdx/71bc406d-d122-4542-abd4-f306793774db",
+  "documentNamespace": "https://nxp.com/spdx/db05a8b7-0f6d-4484-9734-66bd5d0f0600",
   "packages": [
     {
-      "SPDXID": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db",
+      "SPDXID": "SPDXRef-package-db05a8b7-0f6d-4484-9734-66bd5d0f0600",
       "name": "coremqtt",
-      "versionInfo": "v25.06.00",
+      "versionInfo": "v26.03.00-pvw1",
       "licenseConcluded": "(MIT)",
       "licenseDeclared": "(MIT)",
       "downloadLocation": "https://github.com/nxp-mcuxpresso/coremqtt",
@@ -25,15 +25,26 @@
       "filesAnalyzed": false
     },
     {
-      "SPDXID": "SPDXRef-package-8a45fd44-10b4-43fd-b2ff-880d906c8388",
-      "name": "FreeRTOS core",
-      "versionInfo": "v2.1.1",
+      "SPDXID": "SPDXRef-package-4ba4069f-cfca-4473-b68d-3ccef5f95b45",
+      "name": "FreeRTOS/coreMQTT",
+      "versionInfo": "v2.3.1",
       "licenseConcluded": "MIT",
       "licenseDeclared": "MIT",
       "downloadLocation": "NOASSERTION",
-      "originator": "Organization: NXP",
+      "originator": "Organization: freertos",
       "supplier": "NOASSERTION",
-      "externalRefs": [],
+      "externalRefs": [
+        {
+          "referenceCategory": "OTHER",
+          "referenceLocator": "c515c545-9986-46a6-b1da-f0b5a33cf263",
+          "referenceType": "BlackDuck-ComponentOrigin"
+        },
+        {
+          "referenceCategory": "PACKAGE-MANAGER",
+          "referenceLocator": "pkg:github/FreeRTOS/coreMQTT@v2.3.1",
+          "referenceType": "purl"
+        }
+      ],
       "filesAnalyzed": false
     }
   ],
@@ -41,12 +52,12 @@
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db"
+      "relatedSpdxElement": "SPDXRef-package-db05a8b7-0f6d-4484-9734-66bd5d0f0600"
     },
     {
-      "spdxElementId": "SPDXRef-package-71bc406d-d122-4542-abd4-f306793774db",
+      "spdxElementId": "SPDXRef-package-db05a8b7-0f6d-4484-9734-66bd5d0f0600",
       "relationshipType": "CONTAINS",
-      "relatedSpdxElement": "SPDXRef-package-8a45fd44-10b4-43fd-b2ff-880d906c8388"
+      "relatedSpdxElement": "SPDXRef-package-4ba4069f-cfca-4473-b68d-3ccef5f95b45"
     }
   ]
 }
