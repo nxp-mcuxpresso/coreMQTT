@@ -1,10 +1,11 @@
 #
-# Copyright 2024-2025 NXP
+# Copyright 2024-2026 NXP
 #
 # SPDX-License-Identifier: MIT
 #
 
 if (CONFIG_MCUX_COMPONENT_middleware.freertos.coremqtt.template)
+    # Template/config header is kept in this NXP integration repo.
     mcux_add_source(
         SOURCES template/core_mqtt_config.h
     )
@@ -16,9 +17,17 @@ endif()
 
 if (CONFIG_MCUX_COMPONENT_middleware.freertos.coremqtt)
     mcux_add_source(
-        SOURCES source/core_mqtt.c source/core_mqtt_serializer.c source/core_mqtt_state.c source/include/core_mqtt.h source/include/core_mqtt_config_defaults.h source/include/core_mqtt_serializer.h source/include/core_mqtt_state.h source/interface/transport_interface.h
+        SOURCES ../coremqtt-upstream/source/core_mqtt.c
+                ../coremqtt-upstream/source/core_mqtt_serializer.c
+                ../coremqtt-upstream/source/core_mqtt_state.c
+                ../coremqtt-upstream/source/include/core_mqtt.h
+                ../coremqtt-upstream/source/include/core_mqtt_config_defaults.h
+                ../coremqtt-upstream/source/include/core_mqtt_serializer.h
+                ../coremqtt-upstream/source/include/core_mqtt_state.h
+                ../coremqtt-upstream/source/interface/transport_interface.h
     )
     mcux_add_include(
-        INCLUDES source/include source/interface
+        INCLUDES ../coremqtt-upstream/source/include
+                 ../coremqtt-upstream/source/interface
     )
 endif()
