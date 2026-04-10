@@ -2,49 +2,26 @@
   "SPDXID": "SPDXRef-DOCUMENT",
   "spdxVersion": "SPDX-2.3",
   "creationInfo": {
-    "created": "2026-01-08T03:54:23Z",
+    "created": "2026-04-16T08:24:04Z",
     "creators": [
       "Organization: NXP"
     ],
     "licenseListVersion": "3.26"
   },
-  "name": "coremqtt-v26.03.00-pvw1",
+  "name": "coremqtt-v26.06.00",
   "dataLicense": "CC0-1.0",
-  "documentNamespace": "https://nxp.com/spdx/db05a8b7-0f6d-4484-9734-66bd5d0f0600",
+  "documentNamespace": "https://nxp.com/spdx/487e35fe-0fac-43e5-9b60-82fa86a02b43",
   "packages": [
     {
-      "SPDXID": "SPDXRef-package-db05a8b7-0f6d-4484-9734-66bd5d0f0600",
+      "SPDXID": "SPDXRef-package-487e35fe-0fac-43e5-9b60-82fa86a02b43",
       "name": "coremqtt",
-      "versionInfo": "v26.03.00-pvw1",
-      "licenseConcluded": "(MIT)",
-      "licenseDeclared": "(MIT)",
+      "versionInfo": "v26.06.00",
+      "licenseConcluded": "(BSD-3-Clause)",
+      "licenseDeclared": "(BSD-3-Clause)",
       "downloadLocation": "https://github.com/nxp-mcuxpresso/coremqtt",
       "originator": "Organization: NXP",
       "supplier": "NOASSERTION",
       "externalRefs": [],
-      "filesAnalyzed": false
-    },
-    {
-      "SPDXID": "SPDXRef-package-4ba4069f-cfca-4473-b68d-3ccef5f95b45",
-      "name": "FreeRTOS/coreMQTT",
-      "versionInfo": "v2.3.1",
-      "licenseConcluded": "MIT",
-      "licenseDeclared": "MIT",
-      "downloadLocation": "NOASSERTION",
-      "originator": "Organization: freertos",
-      "supplier": "NOASSERTION",
-      "externalRefs": [
-        {
-          "referenceCategory": "OTHER",
-          "referenceLocator": "c515c545-9986-46a6-b1da-f0b5a33cf263",
-          "referenceType": "BlackDuck-ComponentOrigin"
-        },
-        {
-          "referenceCategory": "PACKAGE-MANAGER",
-          "referenceLocator": "pkg:github/FreeRTOS/coreMQTT@v2.3.1",
-          "referenceType": "purl"
-        }
-      ],
       "filesAnalyzed": false
     }
   ],
@@ -52,12 +29,7 @@
     {
       "spdxElementId": "SPDXRef-DOCUMENT",
       "relationshipType": "DESCRIBES",
-      "relatedSpdxElement": "SPDXRef-package-db05a8b7-0f6d-4484-9734-66bd5d0f0600"
-    },
-    {
-      "spdxElementId": "SPDXRef-package-db05a8b7-0f6d-4484-9734-66bd5d0f0600",
-      "relationshipType": "CONTAINS",
-      "relatedSpdxElement": "SPDXRef-package-4ba4069f-cfca-4473-b68d-3ccef5f95b45"
+      "relatedSpdxElement": "SPDXRef-package-487e35fe-0fac-43e5-9b60-82fa86a02b43"
     }
   ]
 }
